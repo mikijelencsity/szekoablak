@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kapcsolat és ajánlatkérés — Szeko Ablak Kft.</title>
+  <meta name="description" content="Kérjen ingyenes árajánlatot ablakcserére, redőnyre vagy felújításra. Baja és 40 km-es körzete.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true"></span>
+        Szeko Ablak <small>Kft.</small>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menü">
+        <span></span>
+      </button>
+      <nav class="main-nav" id="mainnav" aria-label="Fő navigáció">
+        <ul>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+          <li><a href="munkaink.html">Munkáink</a></li>
+          <li><a href="rolunk.html">Rólunk</a></li>
+          <li><a href="gyik.html">GYIK</a></li>
+          <li><a href="kapcsolat.html" aria-current="page">Kapcsolat</a></li>
+        </ul>
+      </nav>
+      <div class="header-cta">
+        <a class="btn btn--primary" href="#ajanlatkeres">Ajánlatkérés</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Kapcsolat</p>
+        <h1>Kérjen ingyenes árajánlatot</h1>
+        <p class="lead">Töltse ki az űrlapot, vagy hívjon minket — 24 órán belül visszajelzünk.</p>
+      </div>
+    </section>
+
+    <section class="section" id="ajanlatkeres">
+      <div class="container contact-grid">
+
+        <!-- Form -->
+        <form class="contact-form reveal" data-quote-form novalidate>
+          <h2 style="font-size:1.5rem;">Ajánlatkérő űrlap</h2>
+          <p style="margin-bottom:28px;">Pár sor a tervezett munkáról elég — a részleteket a felmérésen egyeztetjük.</p>
+          <div class="form-grid">
+            <div class="form-field">
+              <label for="f-name">Név *</label>
+              <input id="f-name" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="form-field">
+              <label for="f-phone">Telefonszám *</label>
+              <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
+            </div>
+            <div class="form-field">
+              <label for="f-email">E-mail cím</label>
+              <input id="f-email" name="email" type="email" autocomplete="email">
+            </div>
+            <div class="form-field">
+              <label for="f-city">Település</label>
+              <input id="f-city" name="city" type="text" autocomplete="address-level2" placeholder="pl. Baja">
+            </div>
+            <div class="form-field form-field--full">
+              <label for="f-service">Milyen munkáról van szó? *</label>
+              <select id="f-service" name="service" required>
+                <option value="" selected disabled>Válasszon…</option>
+                <option>Ablak- és ajtócsere</option>
+                <option>Ablakjavítás</option>
+                <option>Redőny</option>
+                <option>Generál felújítás</option>
+                <option>Festés</option>
+                <option>Tapétázás</option>
+                <option>Hideg- vagy melegburkolás</option>
+                <option>Egyéb</option>
+              </select>
+            </div>
+            <div class="form-field form-field--full">
+              <label for="f-msg">Üzenet</label>
+              <textarea id="f-msg" name="message" placeholder="Pl. 6 db ablak cseréje családi házban…"></textarea>
+            </div>
+          </div>
+          <div style="margin-top:26px;">
+            <button class="btn btn--primary btn--lg" type="submit" style="width:100%;">Ajánlatkérés elküldése</button>
+          </div>
+          <p class="form-footnote">A csillaggal jelölt mezők kitöltése kötelező. Adatait kizárólag az ajánlatadáshoz használjuk.</p>
+        </form>
+
+        <!-- Info -->
+        <div>
+          <div class="info-card reveal">
+            <h3 style="font-size:1.2rem;">Elérhetőségek</h3>
+            <ul class="info-list">
+              <li><span class="label">Telefon</span><a href="tel:+36300000000">+36 30 000 0000</a></li>
+              <li><span class="label">E-mail</span><a href="mailto:info@szekoablak.hu">info@szekoablak.hu</a></li>
+              <li><span class="label">Cím</span><strong>6500 Baja, Minta utca 12.</strong></li>
+            </ul>
+          </div>
+
+          <div class="info-card reveal">
+            <h3 style="font-size:1.2rem;">Nyitvatartás</h3>
+            <ul class="info-list">
+              <li><span class="label">Hétfő–Péntek</span><strong>7:00 – 17:00</strong></li>
+              <li><span class="label">Szombat</span><strong>8:00 – 12:00</strong></li>
+              <li><span class="label">Vasárnap</span><strong>Zárva</strong></li>
+            </ul>
+          </div>
+
+          <div class="info-card reveal">
+            <h3 style="font-size:1.2rem;">Szolgáltatási terület</h3>
+            <p style="font-size:0.96rem;">Baja és kb. 40 km-es körzete:</p>
+            <div class="area-tags">
+              <span>Baja</span>
+              <span>Szekszárd</span>
+              <span>Kalocsa</span>
+              <span>Bácsalmás</span>
+              <span>Mohács</span>
+              <span>Érsekcsanád</span>
+              <span>Sükösd</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Map -->
+    <section class="section--tight">
+      <div class="container">
+        <div class="map-wrap reveal">
+          <iframe
+            src="https://www.google.com/maps?q=Baja,+Hungary&z=12&output=embed"
+            title="Szeko Ablak Kft. — Baja térkép"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="container">
+        <p class="eyebrow" style="color:#7fa6d1;">Gyorsabb így</p>
+        <h2>Inkább telefonálna?</h2>
+        <p>Munkanapokon 7 és 17 óra között közvetlenül elér minket.</p>
+        <div class="cta-actions">
+          <a class="btn btn--light btn--lg" href="tel:+36300000000">+36 30 000 0000</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="brand" href="index.html">
+            <span class="brand-mark" aria-hidden="true"></span>
+            Szeko Ablak <small>Kft.</small>
+          </a>
+          <p>Családi vállalkozás Baján. Nyílászárócsere, redőny és teljes körű felújítás — 15 éve.</p>
+        </div>
+        <div>
+          <h4>Szolgáltatások</h4>
+          <ul>
+            <li><a href="szolgaltatasok.html#ablakcsere">Ablakcsere</a></li>
+            <li><a href="szolgaltatasok.html#redony">Redőny</a></li>
+            <li><a href="szolgaltatasok.html#festes">Festés</a></li>
+            <li><a href="szolgaltatasok.html#burkolas">Burkolás</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Oldalak</h4>
+          <ul>
+            <li><a href="rolunk.html">Rólunk</a></li>
+            <li><a href="munkaink.html">Munkáink</a></li>
+            <li><a href="gyik.html">GYIK</a></li>
+            <li><a href="kapcsolat.html">Kapcsolat</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Kapcsolat</h4>
+          <ul>
+            <li><a href="tel:+36300000000">+36 30 000 0000</a></li>
+            <li><a href="mailto:info@szekoablak.hu">info@szekoablak.hu</a></li>
+            <li>6500 Baja, Minta utca 12.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Szeko Ablak Kft. Minden jog fenntartva.</span>
+        <span>Baja és környéke</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/main.js" defer></script>
+</body>
+</html>
