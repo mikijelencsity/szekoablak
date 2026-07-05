@@ -7,7 +7,8 @@
   <meta name="description" content="Családi vállalkozás Baján. Ablakcsere, ablakjavítás, redőny, festés, burkolás és teljes körű felújítás. Kérjen ingyenes árajánlatot!">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=clash-display@500,600,700&display=swap">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
@@ -40,50 +41,62 @@
   <main>
 
     <!-- Hero -->
-    <section class="hero">
-      <div class="container">
-        <div class="hero-inner">
-          <p class="eyebrow">Baja és környéke · 15 éve</p>
-          <h1>Nyílászárócsere, amire évtizedekig számíthat.</h1>
-          <p class="lead">Családi vállalkozásunk ablakcserével, redőnyökkel és teljes körű lakásfelújítással foglalkozik. Pontos ár, tiszta munka, tartható határidő.</p>
-          <div class="hero-actions">
-            <a class="btn btn--primary btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
-            <a class="btn btn--ghost btn--lg" href="tel:+36300000000">Hívás most</a>
-          </div>
-          <p class="hero-note">Ingyenes helyszíni felmérés · 24 órán belül visszahívjuk</p>
+    <section class="hero" id="hero">
+      <div class="container hero-top">
+        <p class="eyebrow">Baja és környéke · 15 éve</p>
+        <h1>Nyílászárócsere,<br>amire évtizedekig<br>számíthat.</h1>
+      </div>
+
+      <!-- Signature moment: window-frame scroll reveal -->
+      <div class="window-stage" id="windowStage">
+        <div class="window-behind">
+          <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1800&auto=format&fit=crop" alt="" role="presentation">
         </div>
-        <div class="hero-media frame reveal">
-          <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1800&auto=format&fit=crop" alt="Modern családi ház új nyílászárókkal" width="1800" height="900" fetchpriority="high">
+        <div class="window-frame" aria-hidden="true">
+          <span class="mullion mullion--v"></span>
+          <span class="mullion mullion--h"></span>
+          <span class="pane pane--tl"></span>
+          <span class="pane pane--tr"></span>
+          <span class="pane pane--bl"></span>
+          <span class="pane pane--br"></span>
+        </div>
+        <div class="window-copy">
+          <div class="window-copy-panel">
+            <p class="lead">Családi vállalkozásunk ablakcserével, redőnyökkel és teljes körű lakásfelújítással foglalkozik. Pontos ár, tiszta munka, tartható határidő.</p>
+            <div class="hero-actions">
+              <a class="btn btn--primary btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
+              <a class="btn btn--ghost btn--lg" href="tel:+36300000000">Hívás most</a>
+            </div>
+            <p class="hero-note">Ingyenes helyszíni felmérés · 24 órán belül visszahívjuk</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Why choose us -->
-    <section class="section">
+    <section class="section section--tint" id="whyus">
       <div class="container">
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
         <div class="section-head reveal">
+          <span class="window-echo" aria-hidden="true"></span>
           <p class="eyebrow">Miért minket</p>
-          <h2>Amit egy jó mestertől elvár — nálunk ez az alap.</h2>
+          <h2 class="text-emphasis">Amit egy jó mestertől elvár — nálunk ez az alap.</h2>
         </div>
-        <div class="feature-grid">
-          <article class="feature reveal">
-            <span class="feature-num">15 év</span>
-            <h3>Tapasztalat</h3>
+        <div class="statement-list" data-stagger-group>
+          <article class="statement reveal-stagger">
+            <span class="statement-num">15 év</span>
             <p>Több száz elvégzett munka Baján és a környező településeken.</p>
           </article>
-          <article class="feature reveal">
-            <span class="feature-num">Fix ár</span>
-            <h3>Pontos árajánlat</h3>
+          <article class="statement reveal-stagger">
+            <span class="statement-num">Fix ár</span>
             <p>Írásos ajánlat felmérés után — rejtett költségek nélkül.</p>
           </article>
-          <article class="feature reveal">
-            <span class="feature-num">Garancia</span>
-            <h3>Garantált minőség</h3>
+          <article class="statement reveal-stagger">
+            <span class="statement-num">Garancia</span>
             <p>Beépítésre és anyagra egyaránt garanciát vállalunk.</p>
           </article>
-          <article class="feature reveal">
-            <span class="feature-num">Tisztaság</span>
-            <h3>Rendezett munkavégzés</h3>
+          <article class="statement reveal-stagger">
+            <span class="statement-num">Tisztaság</span>
             <p>Takarással, portalanítással dolgozunk, magunk után rendet hagyunk.</p>
           </article>
         </div>
@@ -91,15 +104,16 @@
     </section>
 
     <!-- Main services -->
-    <section class="section section--surface">
+    <section class="section section--surface" id="szolgaltatasaink">
       <div class="container">
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
         <div class="section-head reveal">
           <p class="eyebrow">Szolgáltatások</p>
-          <h2>Fő szolgáltatásaink</h2>
+          <h2 class="text-emphasis">Fő szolgáltatásaink</h2>
           <p class="lead">Az ablakcsere a szakterületünk, de a teljes felújítást is egy kézből intézzük.</p>
         </div>
-        <div class="service-grid">
-          <article class="service-card reveal">
+        <div class="service-grid" data-stagger-group data-hover-spotlight>
+          <article class="service-card reveal-stagger">
             <img src="https://images.unsplash.com/photo-1449247709967-d4461a6a6103?q=80&w=1200&auto=format&fit=crop" alt="Új műanyag ablak beépítve" loading="lazy" width="1200" height="750">
             <div class="service-card-body">
               <h3>Ablak- és ajtócsere</h3>
@@ -107,7 +121,7 @@
               <a class="text-link" href="szolgaltatasok.html#ablakcsere">Részletek</a>
             </div>
           </article>
-          <article class="service-card reveal">
+          <article class="service-card reveal-stagger">
             <img src="https://images.unsplash.com/photo-1523217582562-09d0def993a6?q=80&w=1200&auto=format&fit=crop" alt="Családi ház redőnyökkel" loading="lazy" width="1200" height="750">
             <div class="service-card-body">
               <h3>Redőny</h3>
@@ -115,7 +129,7 @@
               <a class="text-link" href="szolgaltatasok.html#redony">Részletek</a>
             </div>
           </article>
-          <article class="service-card reveal">
+          <article class="service-card reveal-stagger">
             <img src="https://images.unsplash.com/photo-1600210492486-724fe5c67fb0?q=80&w=1200&auto=format&fit=crop" alt="Felújított nappali" loading="lazy" width="1200" height="750">
             <div class="service-card-body">
               <h3>Teljes körű felújítás</h3>
@@ -131,15 +145,18 @@
     </section>
 
     <!-- Featured projects -->
-    <section class="section">
+    <section class="section" id="munkaink">
       <div class="container">
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
         <div class="section-head reveal">
           <p class="eyebrow">Munkáink</p>
-          <h2>Néhány friss projekt</h2>
+          <h2 class="text-emphasis">Néhány friss projekt</h2>
         </div>
-        <div class="masonry">
-          <article class="project-card reveal">
-            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1200&auto=format&fit=crop" alt="Felújított családi ház nappali" loading="lazy" width="1200" height="800">
+        <div class="project-grid" data-stagger-group>
+          <article class="project-card reveal-stagger">
+            <div class="project-card-media reveal-clip" data-clip-from="left">
+              <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=1600&auto=format&fit=crop" alt="Felújított családi ház nappali" loading="lazy" width="1600" height="1100" data-parallax>
+            </div>
             <div class="project-card-body">
               <div class="project-meta">
                 <span class="tag tag--service">Ablakcsere</span>
@@ -149,8 +166,10 @@
               <p>Teljes csere két nap alatt, kávahelyreállítással.</p>
             </div>
           </article>
-          <article class="project-card reveal">
-            <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1200&auto=format&fit=crop" alt="Felújított konyha" loading="lazy" width="1200" height="900">
+          <article class="project-card reveal-stagger">
+            <div class="project-card-media reveal-clip" data-clip-from="right">
+              <img src="https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=1600&auto=format&fit=crop" alt="Felújított konyha" loading="lazy" width="1600" height="1200" data-parallax>
+            </div>
             <div class="project-card-body">
               <div class="project-meta">
                 <span class="tag tag--service">Burkolás</span>
@@ -158,17 +177,6 @@
               </div>
               <h3>Konyha burkolás</h3>
               <p>Hidegburkolás és festés összehangolt kivitelezésben.</p>
-            </div>
-          </article>
-          <article class="project-card reveal">
-            <img src="https://images.unsplash.com/photo-1493809842364-78817add7ffb?q=80&w=1200&auto=format&fit=crop" alt="Világos felújított nappali" loading="lazy" width="1200" height="800">
-            <div class="project-card-body">
-              <div class="project-meta">
-                <span class="tag tag--service">Festés</span>
-                <span class="tag tag--location">Bácsalmás</span>
-              </div>
-              <h3>Nappali és hálószoba festés</h3>
-              <p>Glettelés, festés két rétegben, bútormozgatással.</p>
             </div>
           </article>
         </div>
@@ -179,55 +187,66 @@
     </section>
 
     <!-- Reviews -->
-    <section class="section section--surface">
+    <section class="section section--dark" id="velemenyek">
       <div class="container">
+        <span class="section-divider section-divider--light" aria-hidden="true"><span></span><span></span></span>
         <div class="section-head section-head--center reveal">
-          <p class="eyebrow">Vélemények</p>
-          <h2>Ügyfeleink mondták</h2>
+          <p class="eyebrow eyebrow--light">Vélemények</p>
+          <h2 class="text-emphasis">Ügyfeleink mondták</h2>
         </div>
-        <div class="review-grid">
-          <figure class="review reveal">
-            <span class="review-stars" aria-label="5 csillag">★★★★★</span>
+      </div>
+      <div class="reviews-viewport">
+        <div class="reviews-track" id="reviewsTrack">
+          <figure class="review">
+            <span class="review-stars" aria-label="5 csillag">
+              <span class="review-stars-fill">★★★★★</span>
+            </span>
             <blockquote>„Pontosan érkeztek, tisztán dolgoztak, és tartották az árat. Csak ajánlani tudom őket."</blockquote>
             <figcaption><strong>Kovács Péterné</strong>Baja · ablakcsere</figcaption>
           </figure>
-          <figure class="review reveal">
-            <span class="review-stars" aria-label="5 csillag">★★★★★</span>
+          <figure class="review">
+            <span class="review-stars" aria-label="5 csillag">
+              <span class="review-stars-fill">★★★★★</span>
+            </span>
             <blockquote>„A redőnyök két héten belül fent voltak. Korrekt, megbízható csapat."</blockquote>
             <figcaption><strong>Nagy Zoltán</strong>Érsekcsanád · redőny</figcaption>
           </figure>
-          <figure class="review reveal">
-            <span class="review-stars" aria-label="5 csillag">★★★★★</span>
+          <figure class="review">
+            <span class="review-stars" aria-label="5 csillag">
+              <span class="review-stars-fill">★★★★★</span>
+            </span>
             <blockquote>„A teljes lakásfelújítást rájuk bíztuk. Végig lehetett tudni, mi mikor történik."</blockquote>
             <figcaption><strong>Szabó Andrea</strong>Baja · felújítás</figcaption>
           </figure>
         </div>
+        <div class="reviews-dots" id="reviewsDots"></div>
       </div>
     </section>
 
     <!-- FAQ preview -->
     <section class="section">
       <div class="container">
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
         <div class="section-head section-head--center reveal">
           <p class="eyebrow">GYIK</p>
-          <h2>Gyakori kérdések</h2>
+          <h2 class="text-emphasis">Gyakori kérdések</h2>
         </div>
-        <div class="faq-list reveal">
-          <div class="faq-item">
+        <div class="faq-list" data-faq data-stagger-group>
+          <div class="faq-item reveal-stagger">
             <button class="faq-q" aria-expanded="false">
               Mennyi idő alatt készül el egy ablakcsere?
               <span class="icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-a"><div class="faq-a-inner">Egy átlagos családi háznál a csere jellemzően 1–2 munkanap, a helyreállítással együtt.</div></div>
           </div>
-          <div class="faq-item">
+          <div class="faq-item reveal-stagger">
             <button class="faq-q" aria-expanded="false">
               Az árajánlat ingyenes?
               <span class="icon" aria-hidden="true">+</span>
             </button>
             <div class="faq-a"><div class="faq-a-inner">Igen. A helyszíni felmérés és az írásos árajánlat is díjmentes, kötelezettség nélkül.</div></div>
           </div>
-          <div class="faq-item">
+          <div class="faq-item reveal-stagger">
             <button class="faq-q" aria-expanded="false">
               Vállalnak munkát Baján kívül is?
               <span class="icon" aria-hidden="true">+</span>
@@ -245,7 +264,7 @@
     <section class="cta-band">
       <div class="container">
         <p class="eyebrow" style="color:#7fa6d1;">Ajánlatkérés</p>
-        <h2>Kérjen ingyenes felmérést és árajánlatot</h2>
+        <h2 class="text-emphasis">Kérjen ingyenes felmérést és árajánlatot</h2>
         <p>Írjon nekünk pár sort a tervezett munkáról, és 24 órán belül visszahívjuk.</p>
         <div class="cta-actions">
           <a class="btn btn--light btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
@@ -300,6 +319,8 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="assets/main.js" defer></script>
 </body>
 </html>
