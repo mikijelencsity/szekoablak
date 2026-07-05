@@ -50,28 +50,30 @@
     <section class="section" id="ajanlatkeres">
       <div class="container contact-grid">
 
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
+
         <!-- Form -->
         <form class="contact-form reveal" data-quote-form novalidate>
-          <h2>Ajánlatkérő űrlap</h2>
+          <h2 class="text-emphasis">Ajánlatkérő űrlap</h2>
           <p style="margin-bottom:28px;">Pár sor a tervezett munkáról elég — a részleteket a felmérésen egyeztetjük.</p>
-          <div class="form-grid">
-            <div class="form-field">
+          <div class="form-grid" data-stagger-group>
+            <div class="form-field reveal-stagger">
               <label for="f-name">Név *</label>
               <input id="f-name" name="name" type="text" autocomplete="name" required>
             </div>
-            <div class="form-field">
+            <div class="form-field reveal-stagger">
               <label for="f-phone">Telefonszám *</label>
               <input id="f-phone" name="phone" type="tel" autocomplete="tel" required>
             </div>
-            <div class="form-field">
+            <div class="form-field reveal-stagger">
               <label for="f-email">E-mail cím</label>
               <input id="f-email" name="email" type="email" autocomplete="email">
             </div>
-            <div class="form-field">
+            <div class="form-field reveal-stagger">
               <label for="f-city">Település</label>
               <input id="f-city" name="city" type="text" autocomplete="address-level2" placeholder="pl. Baja">
             </div>
-            <div class="form-field form-field--full">
+            <div class="form-field form-field--full reveal-stagger">
               <label for="f-service">Milyen munkáról van szó? *</label>
               <select id="f-service" name="service" required>
                 <option value="" selected disabled>Válasszon…</option>
@@ -85,7 +87,7 @@
                 <option>Egyéb</option>
               </select>
             </div>
-            <div class="form-field form-field--full">
+            <div class="form-field form-field--full reveal-stagger">
               <label for="f-msg">Üzenet</label>
               <textarea id="f-msg" name="message" placeholder="Pl. 6 db ablak cseréje családi házban…"></textarea>
             </div>
@@ -97,8 +99,8 @@
         </form>
 
         <!-- Info -->
-        <div>
-          <div class="info-card reveal">
+        <div data-stagger-group>
+          <div class="info-card reveal-stagger">
             <h3>Elérhetőségek</h3>
             <ul class="info-list">
               <li><span class="label">Telefon</span><a href="tel:+36300000000">+36 30 000 0000</a></li>
@@ -107,7 +109,7 @@
             </ul>
           </div>
 
-          <div class="info-card reveal">
+          <div class="info-card reveal-stagger">
             <h3>Nyitvatartás</h3>
             <ul class="info-list">
               <li><span class="label">Hétfő–Péntek</span><strong>7:00 – 17:00</strong></li>
@@ -116,7 +118,7 @@
             </ul>
           </div>
 
-          <div class="info-card reveal">
+          <div class="info-card reveal-stagger">
             <h3>Szolgáltatási terület</h3>
             <p style="font-size:var(--text-small);">Baja és kb. 40 km-es körzete:</p>
             <div class="area-tags">
@@ -137,6 +139,7 @@
     <!-- Map -->
     <section class="section--tight">
       <div class="container">
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
         <div class="map-wrap reveal">
           <iframe
             src="https://www.google.com/maps?q=Baja,+Hungary&z=12&output=embed"
@@ -150,8 +153,9 @@
 
     <section class="cta-band">
       <div class="container">
+        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
         <p class="eyebrow" style="color:#7fa6d1;">Gyorsabb így</p>
-        <h2>Inkább telefonálna?</h2>
+        <h2 class="text-emphasis">Inkább telefonálna?</h2>
         <p>Munkanapokon 7 és 17 óra között közvetlenül elér minket.</p>
         <div class="cta-actions">
           <a class="btn btn--light btn--lg" href="tel:+36300000000">+36 30 000 0000</a>
@@ -205,6 +209,8 @@
     </div>
   </footer>
 
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   <script src="assets/main.js" defer></script>
 </body>
 </html>
