@@ -30,7 +30,11 @@ utility behavior) and assets/motion.js (GSAP/ScrollTrigger components).
   scales in and sharpens while an SVG window-frame mask shrinks away and the
   headline fades up and out. `index.html` uses the full-length version
   (`data-hero-zoom`, 340vh pin); every other page uses the compact variant
-  (`data-hero-zoom` + `data-hero-zoom-compact`, 170vh pin).
+  (`data-hero-zoom` + `data-hero-zoom-compact`, 170vh pin) — EXCEPT `gyik.html`
+  and `kapcsolat.html`, which deliberately use a plain, non-pinned header
+  instead, so the FAQ list and (business-critical) contact form are instantly
+  usable with no scroll-jack in front of them. Don't add hero-zoom to those
+  two pages.
 - Primary content blocks are full-bleed split sections (`data-split`,
   `data-split-reverse` to alternate direction): large photo with parallax on
   one side, staggered-reveal copy on the other. This replaces the old
