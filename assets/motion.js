@@ -61,11 +61,11 @@
   document.querySelectorAll("[data-h-gallery]").forEach(function (pin) {
     var track = pin.querySelector(".gallery-track");
     if (!track || !gsapReady || reduceMotion || !isDesktop) return;
-    function scrollAmount() { return -(track.scrollWidth - window.innerWidth + 80); }
+    function travelDistance() { return track.scrollWidth - window.innerWidth + 80; }
     gsap.to(track, {
-      x: scrollAmount, ease: "none",
+      x: function () { return -travelDistance(); }, ease: "none",
       scrollTrigger: {
-        trigger: pin, start: "top top", end: function () { return "+=" + track.scrollWidth; },
+        trigger: pin, start: "top top", end: function () { return "+=" + travelDistance(); },
         scrub: 1, pin: true, invalidateOnRefresh: true
       }
     });
