@@ -229,3 +229,14 @@ section { position: relative; }
 [data-cta-final] h2 { font-size: clamp(2rem, 5vw, 3.6rem); font-weight: 800; letter-spacing: -2px; margin-bottom: 28px; }
 [data-cta-final] p { color: #cddcf5; margin-bottom: 28px; font-size: 17px; }
 [data-cta-final] .cta-actions { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+
+/* FAQ */
+.faq-list { max-width: 760px; margin: 0 auto; }
+.faq-item { border-bottom: 1px solid rgba(11,99,230,0.15); }
+.faq-q {
+  width: 100%; text-align: left; background: none; border: none; cursor: pointer;
+  padding: 26px 0; font-size: 17px; font-weight: 700; display: flex; justify-content: space-between; align-items: center;
+}
+.faq-q .icon { font-size: 22px; color: var(--blue); font-weight: 400; }
+.faq-a { height: 0; overflow: hidden; }
+.faq-a-inner { padding-bottom: 24px; color: var(--text-body); font-size: 15.5px; max-width: 640px; }

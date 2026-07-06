@@ -7,196 +7,143 @@
   <meta name="description" content="Válaszok a leggyakoribb kérdésekre az ablakcserével, redőnyökkel és felújítással kapcsolatban.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span>
-        Szeko Ablak <small>Kft.</small>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menü">
-        <span></span>
-      </button>
-      <nav class="main-nav" id="mainnav" aria-label="Fő navigáció">
+<nav class="site-header">
+  <a class="brand" href="index.html">Szeko Ablak <small>Kft.</small></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menü"></button>
+  <div class="main-nav" id="mainnav">
+    <ul>
+      <li><a href="index.html">Kezdőlap</a></li>
+      <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+      <li><a href="munkaink.html">Munkáink</a></li>
+      <li><a href="rolunk.html">Rólunk</a></li>
+      <li><a href="gyik.html" aria-current="page">GYIK</a></li>
+      <li><a href="kapcsolat.html">Kapcsolat</a></li>
+    </ul>
+  </div>
+  <div class="header-cta"><a class="btn" href="kapcsolat.html">Ajánlatkérés</a></div>
+</nav>
+
+<main>
+
+  <section class="section" style="padding-top:160px;padding-bottom:60px;">
+    <div class="container">
+      <span class="eyebrow">GYIK</span>
+      <h1 style="font-size:clamp(2rem,4vw,3.4rem);font-weight:800;letter-spacing:-1.5px;max-width:640px;">Gyakori kérdések</h1>
+      <p style="margin-top:18px;color:var(--text-body);font-size:17px;max-width:520px;">Összegyűjtöttük, amit ügyfeleink a leggyakrabban kérdeznek. Ha nem találja a választ, hívjon minket.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:0;">
+    <div class="container">
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Az árajánlat és a felmérés ingyenes?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Igen. A helyszíni felmérés és az írásos árajánlat is díjmentes, és semmilyen kötelezettséggel nem jár.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Mennyi idő alatt készül el egy ablakcsere?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Egy átlagos családi háznál a csere jellemzően 1–2 munkanap, a kávajavítással és helyreállítással együtt. A pontos időtartamot az ajánlatban rögzítjük.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Mennyivel előre kell időpontot foglalni?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">A felmérésre általában egy héten belül tudunk menni. A kivitelezés kezdete a megrendelt anyagok gyártási idejétől függ, ezt az ajánlatban pontosan jelezzük.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Milyen garanciát vállalnak?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">A beépítési munkára saját garanciát vállalunk, a nyílászárókra és redőnyökre pedig a gyártói garancia érvényes. A részleteket írásban rögzítjük.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Vállalnak munkát Baján kívül is?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Igen, Baja kb. 40 km-es körzetében dolgozunk — többek között Szekszárd, Kalocsa, Bácsalmás és Mohács környékén.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Mi történik a régi ablakokkal és a törmelékkel?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">A bontott nyílászárókat és az építési törmeléket elszállítjuk — ez az ajánlat része, nem kell külön intéznie.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Lakott ingatlanban is tudnak dolgozni?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Igen, munkáink többségét lakott otthonokban végezzük. Takarással, portalanítással dolgozunk, és a nap végén rendet hagyunk magunk után.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Megéri cserélni, vagy elég a javítás?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Ez az ablak állapotától függ — a felmérésen őszintén megmondjuk. Ha egy beállítás vagy tömítéscsere megoldja a problémát, nem fogunk cserét javasolni.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Hogyan történik a fizetés?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Az anyagköltségre előleget kérünk, a fennmaradó összeg az átadáskor esedékes. Számlát minden munkáról adunk.</div></div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" aria-expanded="false">Segítenek a nyílászárók kiválasztásában?<span class="icon" aria-hidden="true">+</span></button>
+          <div class="faq-a"><div class="faq-a-inner">Természetesen. A felmérésen átbeszéljük az igényeket és a keretet, majd konkrét típusokat javaslunk — árakkal együtt, hogy könnyű legyen dönteni.</div></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div data-cta-final>
+    <div class="cta-inner">
+      <h2>Kérdése maradt?<br>Hívjon minket, szívesen segítünk</h2>
+      <p>Vagy kérjen ajánlatot, és a felmérésen mindent átbeszélünk.</p>
+      <div class="cta-actions">
+        <a class="btn btn--light btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+36300000000">+36 30 000 0000</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">Szeko Ablak <small>Kft.</small></a>
+        <p>Családi vállalkozás Baján. Nyílászárócsere, redőny és teljes körű felújítás — 15 éve.</p>
+      </div>
+      <div>
+        <h4>Szolgáltatások</h4>
         <ul>
-          <li><a href="index.html">Kezdőlap</a></li>
-          <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
-          <li><a href="munkaink.html">Munkáink</a></li>
+          <li><a href="szolgaltatasok.html#ablakcsere">Ablakcsere</a></li>
+          <li><a href="szolgaltatasok.html#redony">Redőny</a></li>
+          <li><a href="szolgaltatasok.html#festes">Festés</a></li>
+          <li><a href="szolgaltatasok.html#burkolas">Burkolás</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Oldalak</h4>
+        <ul>
           <li><a href="rolunk.html">Rólunk</a></li>
-          <li><a href="gyik.html" aria-current="page">GYIK</a></li>
+          <li><a href="munkaink.html">Munkáink</a></li>
+          <li><a href="gyik.html">GYIK</a></li>
           <li><a href="kapcsolat.html">Kapcsolat</a></li>
         </ul>
-      </nav>
-      <div class="header-cta">
-        <a class="btn btn--primary" href="kapcsolat.html">Ajánlatkérés</a>
+      </div>
+      <div>
+        <h4>Kapcsolat</h4>
+        <ul>
+          <li><a href="tel:+36300000000">+36 30 000 0000</a></li>
+          <li><a href="mailto:info@szekoablak.hu">info@szekoablak.hu</a></li>
+          <li>6500 Baja, Minta utca 12.</li>
+        </ul>
       </div>
     </div>
-  </header>
-
-  <main>
-
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">GYIK</p>
-        <h1>Gyakori kérdések</h1>
-        <p class="lead">Összegyűjtöttük, amit ügyfeleink a leggyakrabban kérdeznek. Ha nem találja a választ, hívjon minket.</p>
-      </div>
-    </section>
-
-    <section class="section">
-      <div class="container">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <div class="faq-list" data-stagger-group>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Az árajánlat és a felmérés ingyenes?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Igen. A helyszíni felmérés és az írásos árajánlat is díjmentes, és semmilyen kötelezettséggel nem jár.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Mennyi idő alatt készül el egy ablakcsere?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Egy átlagos családi háznál a csere jellemzően 1–2 munkanap, a kávajavítással és helyreállítással együtt. A pontos időtartamot az ajánlatban rögzítjük.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Mennyivel előre kell időpontot foglalni?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">A felmérésre általában egy héten belül tudunk menni. A kivitelezés kezdete a megrendelt anyagok gyártási idejétől függ, ezt az ajánlatban pontosan jelezzük.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Milyen garanciát vállalnak?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">A beépítési munkára saját garanciát vállalunk, a nyílászárókra és redőnyökre pedig a gyártói garancia érvényes. A részleteket írásban rögzítjük.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Vállalnak munkát Baján kívül is?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Igen, Baja kb. 40 km-es körzetében dolgozunk — többek között Szekszárd, Kalocsa, Bácsalmás és Mohács környékén.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Mi történik a régi ablakokkal és a törmelékkel?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">A bontott nyílászárókat és az építési törmeléket elszállítjuk — ez az ajánlat része, nem kell külön intéznie.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Lakott ingatlanban is tudnak dolgozni?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Igen, munkáink többségét lakott otthonokban végezzük. Takarással, portalanítással dolgozunk, és a nap végén rendet hagyunk magunk után.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Megéri cserélni, vagy elég a javítás?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Ez az ablak állapotától függ — a felmérésen őszintén megmondjuk. Ha egy beállítás vagy tömítéscsere megoldja a problémát, nem fogunk cserét javasolni.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Hogyan történik a fizetés?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Az anyagköltségre előleget kérünk, a fennmaradó összeg az átadáskor esedékes. Számlát minden munkáról adunk.</div></div>
-          </div>
-
-          <div class="faq-item reveal-stagger">
-            <button class="faq-q" aria-expanded="false">
-              Segítenek a nyílászárók kiválasztásában?
-              <span class="icon" aria-hidden="true">+</span>
-            </button>
-            <div class="faq-a"><div class="faq-a-inner">Természetesen. A felmérésen átbeszéljük az igényeket és a keretet, majd konkrét típusokat javaslunk — árakkal együtt, hogy könnyű legyen dönteni.</div></div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <p class="eyebrow" style="color:#7fa6d1;">Kérdése maradt?</p>
-        <h2 class="text-emphasis">Hívjon minket, szívesen segítünk</h2>
-        <p>Vagy kérjen ajánlatot, és a felmérésen mindent átbeszélünk.</p>
-        <div class="cta-actions">
-          <a class="btn btn--light btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
-          <a class="btn btn--ghost btn--lg" href="tel:+36300000000">+36 30 000 0000</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true"></span>
-            Szeko Ablak <small>Kft.</small>
-          </a>
-          <p>Családi vállalkozás Baján. Nyílászárócsere, redőny és teljes körű felújítás — 15 éve.</p>
-        </div>
-        <div>
-          <h4>Szolgáltatások</h4>
-          <ul>
-            <li><a href="szolgaltatasok.html#ablakcsere">Ablakcsere</a></li>
-            <li><a href="szolgaltatasok.html#redony">Redőny</a></li>
-            <li><a href="szolgaltatasok.html#festes">Festés</a></li>
-            <li><a href="szolgaltatasok.html#burkolas">Burkolás</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Oldalak</h4>
-          <ul>
-            <li><a href="rolunk.html">Rólunk</a></li>
-            <li><a href="munkaink.html">Munkáink</a></li>
-            <li><a href="gyik.html">GYIK</a></li>
-            <li><a href="kapcsolat.html">Kapcsolat</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Kapcsolat</h4>
-          <ul>
-            <li><a href="tel:+36300000000">+36 30 000 0000</a></li>
-            <li><a href="mailto:info@szekoablak.hu">info@szekoablak.hu</a></li>
-            <li>6500 Baja, Minta utca 12.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Szeko Ablak Kft. Minden jog fenntartva.</span>
-        <span>Baja és környéke</span>
-      </div>
+    <div class="footer-bottom">
+      <span>© 2026 Szeko Ablak Kft. Minden jog fenntartva.</span>
+      <span>Baja és környéke</span>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="assets/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/main.js" defer></script>
+<script src="assets/motion.js" defer></script>
 </body>
 </html>
