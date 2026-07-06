@@ -45,13 +45,13 @@
         <h2>Ajánlatkérő űrlap</h2>
         <p style="margin-bottom:24px;color:var(--text-body);">Pár sor a tervezett munkáról elég — a részleteket a felmérésen egyeztetjük.</p>
         <div class="form-grid">
-          <div class="form-field"><label for="f-name">Név *</label><input id="f-name" name="name" type="text" autocomplete="name" required></div>
-          <div class="form-field"><label for="f-phone">Telefonszám *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required></div>
+          <div class="form-field"><label for="f-name">Név *</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-required="true"></div>
+          <div class="form-field"><label for="f-phone">Telefonszám *</label><input id="f-phone" name="phone" type="tel" autocomplete="tel" required aria-required="true"></div>
           <div class="form-field"><label for="f-email">E-mail cím</label><input id="f-email" name="email" type="email" autocomplete="email"></div>
           <div class="form-field"><label for="f-city">Település</label><input id="f-city" name="city" type="text" autocomplete="address-level2" placeholder="pl. Baja"></div>
           <div class="form-field form-field--full">
             <label for="f-service">Milyen munkáról van szó? *</label>
-            <select id="f-service" name="service" required>
+            <select id="f-service" name="service" required aria-required="true">
               <option value="" selected disabled>Válasszon…</option>
               <option>Ablak- és ajtócsere</option>
               <option>Ablakjavítás</option>

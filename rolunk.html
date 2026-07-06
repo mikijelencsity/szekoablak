@@ -33,7 +33,7 @@
   <div data-hero-zoom data-hero-zoom-compact>
     <div class="hero-stage">
       <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop')"></div>
-      <div class="hero-frame-mask">
+      <div class="hero-frame-mask" aria-hidden="true">
         <svg viewBox="0 0 200 200"><rect x="4" y="4" width="192" height="192" rx="8" fill="none" stroke="#fff" stroke-width="3"/><line x1="100" y1="4" x2="100" y2="196" stroke="#fff" stroke-width="2"/><line x1="4" y1="100" x2="196" y2="100" stroke="#fff" stroke-width="2"/></svg>
       </div>
       <div class="hero-copy">
@@ -69,12 +69,12 @@
         <span class="eyebrow">Mérföldkövek</span>
         <h2>15 év, röviden</h2>
       </div>
-      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;">
-        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2011</div><h3 style="font-size:19px;margin-bottom:8px;">Az indulás</h3><p style="color:var(--text-body);font-size:14.5px;">Ablakcserével és javítással kezdünk Baján, egy kisteherautóval és két mesterrel.</p></div>
-        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2015</div><h3 style="font-size:19px;margin-bottom:8px;">Redőny és árnyékolás</h3><p style="color:var(--text-body);font-size:14.5px;">A növekvő igényekre válaszul bővítjük a kínálatot redőnyszereléssel.</p></div>
-        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2019</div><h3 style="font-size:19px;margin-bottom:8px;">Teljes körű felújítás</h3><p style="color:var(--text-body);font-size:14.5px;">Festéssel, tapétázással és burkolással már generál munkákat is vállalunk.</p></div>
-        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2026</div><h3 style="font-size:19px;margin-bottom:8px;">Ma</h3><p style="color:var(--text-body);font-size:14.5px;">Összeszokott csapattal dolgozunk Baja 40 km-es körzetében — továbbra is családi kézben.</p></div>
-      </div>
+      <ol style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;list-style:none;">
+        <li><time style="display:block;color:var(--blue);font-weight:700;margin-bottom:10px;">2011</time><h3 style="font-size:19px;margin-bottom:8px;">Az indulás</h3><p style="color:var(--text-body);font-size:14.5px;">Ablakcserével és javítással kezdünk Baján, egy kisteherautóval és két mesterrel.</p></li>
+        <li><time style="display:block;color:var(--blue);font-weight:700;margin-bottom:10px;">2015</time><h3 style="font-size:19px;margin-bottom:8px;">Redőny és árnyékolás</h3><p style="color:var(--text-body);font-size:14.5px;">A növekvő igényekre válaszul bővítjük a kínálatot redőnyszereléssel.</p></li>
+        <li><time style="display:block;color:var(--blue);font-weight:700;margin-bottom:10px;">2019</time><h3 style="font-size:19px;margin-bottom:8px;">Teljes körű felújítás</h3><p style="color:var(--text-body);font-size:14.5px;">Festéssel, tapétázással és burkolással már generál munkákat is vállalunk.</p></li>
+        <li><time style="display:block;color:var(--blue);font-weight:700;margin-bottom:10px;">2026</time><h3 style="font-size:19px;margin-bottom:8px;">Ma</h3><p style="color:var(--text-body);font-size:14.5px;">Összeszokott csapattal dolgozunk Baja 40 km-es körzetében — továbbra is családi kézben.</p></li>
+      </ol>
     </div>
   </section>
 
