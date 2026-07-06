@@ -3,7 +3,8 @@
 ## Mi ez
 Family-owned window/door replacement business in Baja, Hungary. Static 
 multi-page site: index.html, szolgaltatasok.html, munkaink.html, rolunk.html, 
-kapcsolat.html, gyik.html. Shared assets/style.css and assets/main.js.
+kapcsolat.html, gyik.html. Shared assets/style.css, assets/main.js (non-motion
+utility behavior) and assets/motion.js (GSAP/ScrollTrigger components).
 
 ## Tech constraints (always apply, don't ask)
 - Vanilla HTML/CSS/JS only. No React, no framework, no bundler, no build step.
@@ -39,6 +40,9 @@ kapcsolat.html, gyik.html. Shared assets/style.css and assets/main.js.
   previews) instead of a static grid.
 - Design tokens live as CSS custom properties in `assets/style.css` `:root`:
   `--paper`, `--ink`, `--blue`, `--blue-deep`, `--text-body`, `--text-muted`.
+- No font-size token system: sizes are set directly per rule (`rem`/`px`/
+  `clamp()`). When adding new UI, reuse the nearest existing font-size already
+  in `assets/style.css` rather than inventing a new value.
 
 ## Motion system (permanent — always apply)
 Six reusable components, implemented in `assets/motion.js` (GSAP/ScrollTrigger)
