@@ -7,197 +7,157 @@
   <meta name="description" content="Családi vállalkozás Baján, 15 év tapasztalattal a nyílászárócsere és felújítás területén.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@500;600;700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <div class="container header-inner">
-      <a class="brand" href="index.html">
-        <span class="brand-mark" aria-hidden="true"></span>
-        Szeko Ablak <small>Kft.</small>
-      </a>
-      <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menü">
-        <span></span>
-      </button>
-      <nav class="main-nav" id="mainnav" aria-label="Fő navigáció">
+<nav class="site-header">
+  <a class="brand" href="index.html">Szeko Ablak <small>Kft.</small></a>
+  <button class="nav-toggle" aria-expanded="false" aria-controls="mainnav" aria-label="Menü"></button>
+  <div class="main-nav" id="mainnav">
+    <ul>
+      <li><a href="index.html">Kezdőlap</a></li>
+      <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+      <li><a href="munkaink.html">Munkáink</a></li>
+      <li><a href="rolunk.html" aria-current="page">Rólunk</a></li>
+      <li><a href="gyik.html">GYIK</a></li>
+      <li><a href="kapcsolat.html">Kapcsolat</a></li>
+    </ul>
+  </div>
+  <div class="header-cta"><a class="btn" href="kapcsolat.html">Ajánlatkérés</a></div>
+</nav>
+
+<main>
+
+  <div data-hero-zoom data-hero-zoom-compact>
+    <div class="hero-stage">
+      <div class="hero-img" style="background-image:url('https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=2000&auto=format&fit=crop')"></div>
+      <div class="hero-frame-mask">
+        <svg viewBox="0 0 200 200"><rect x="4" y="4" width="192" height="192" rx="8" fill="none" stroke="#fff" stroke-width="3"/><line x1="100" y1="4" x2="100" y2="196" stroke="#fff" stroke-width="2"/><line x1="4" y1="100" x2="196" y2="100" stroke="#fff" stroke-width="2"/></svg>
+      </div>
+      <div class="hero-copy">
+        <span class="eyebrow">Rólunk</span>
+        <h1>Családi vállalkozás,<br>ahol a nevünk a <span class="accent">garancia.</span></h1>
+        <p class="lead">15 éve dolgozunk Baján és környékén. Nálunk az a mester adja át a munkát, aki az ajánlatot is adta.</p>
+      </div>
+    </div>
+  </div>
+
+  <section data-split>
+    <div class="split-media"><img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1600&auto=format&fit=crop" alt="Csapatunk munka közben" loading="lazy"></div>
+    <div class="split-copy">
+      <span class="num">Történetünk</span>
+      <h2>A megbízhatóság nálunk nem szlogen.</h2>
+      <p>A Szeko Ablak Kft. családi vállalkozásként indult Baján. Az első munkáktól kezdve egy elv vezet minket: úgy dolgozunk mások otthonában, ahogy a sajátunkban tennénk.</p>
+      <p>Az évek alatt az ablakcsere mellé felépítettük a teljes felújítási szolgáltatásunkat, hogy ügyfeleinknek ne kelljen több mestert koordinálniuk.</p>
+    </div>
+  </section>
+
+  <div data-stat-counter>
+    <div class="container stat-grid">
+      <div class="stat-item"><div class="n" data-count="15">0</div><div class="l">ÉV TAPASZTALAT</div></div>
+      <div class="stat-item"><div class="n" data-count="600">0</div><div class="l">ELVÉGZETT MUNKA</div></div>
+      <div class="stat-item"><div class="n" data-count="40">0</div><div class="l">KM SZOLGÁLTATÁSI KÖRZET</div></div>
+      <div class="stat-item"><div class="n" data-count="100">0</div><div class="l">% CSALÁDI TULAJDON</div></div>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Mérföldkövek</span>
+        <h2>15 év, röviden</h2>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:32px;">
+        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2011</div><h3 style="font-size:19px;margin-bottom:8px;">Az indulás</h3><p style="color:var(--text-body);font-size:14.5px;">Ablakcserével és javítással kezdünk Baján, egy kisteherautóval és két mesterrel.</p></div>
+        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2015</div><h3 style="font-size:19px;margin-bottom:8px;">Redőny és árnyékolás</h3><p style="color:var(--text-body);font-size:14.5px;">A növekvő igényekre válaszul bővítjük a kínálatot redőnyszereléssel.</p></div>
+        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2019</div><h3 style="font-size:19px;margin-bottom:8px;">Teljes körű felújítás</h3><p style="color:var(--text-body);font-size:14.5px;">Festéssel, tapétázással és burkolással már generál munkákat is vállalunk.</p></div>
+        <div><div style="color:var(--blue);font-weight:700;margin-bottom:10px;">2026</div><h3 style="font-size:19px;margin-bottom:8px;">Ma</h3><p style="color:var(--text-body);font-size:14.5px;">Összeszokott csapattal dolgozunk Baja 40 km-es körzetében — továbbra is családi kézben.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section data-split>
+    <div class="split-media"><img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=1600&auto=format&fit=crop" alt="Szekeres Kornél portré" loading="lazy"></div>
+    <div class="split-copy">
+      <span class="num">Csapat</span>
+      <h2>Szekeres Kornél</h2>
+      <p>Ügyvezető, felmérés és árajánlat.</p>
+    </div>
+  </section>
+  <section data-split data-split-reverse>
+    <div class="split-media"><img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=1600&auto=format&fit=crop" alt="Szekeres Márk portré" loading="lazy"></div>
+    <div class="split-copy">
+      <h2>Szekeres Márk</h2>
+      <p>Kivitelezésvezető, nyílászárók.</p>
+    </div>
+  </section>
+  <section data-split>
+    <div class="split-media"><img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=1600&auto=format&fit=crop" alt="Szekeres Anna portré" loading="lazy"></div>
+    <div class="split-copy">
+      <h2>Szekeres Anna</h2>
+      <p>Ügyfélkapcsolat, időpontok.</p>
+    </div>
+  </section>
+
+  <div data-cta-final>
+    <div class="cta-inner">
+      <h2>Dolgozzunk együtt<br>az otthonán</h2>
+      <p>Írjon nekünk, és 24 órán belül visszahívjuk egy időpont-egyeztetéssel.</p>
+      <div class="cta-actions">
+        <a class="btn btn--light btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+36300000000">+36 30 000 0000</a>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <a class="brand" href="index.html">Szeko Ablak <small>Kft.</small></a>
+        <p>Családi vállalkozás Baján. Nyílászárócsere, redőny és teljes körű felújítás — 15 éve.</p>
+      </div>
+      <div>
+        <h4>Szolgáltatások</h4>
         <ul>
-          <li><a href="index.html">Kezdőlap</a></li>
-          <li><a href="szolgaltatasok.html">Szolgáltatások</a></li>
+          <li><a href="szolgaltatasok.html#ablakcsere">Ablakcsere</a></li>
+          <li><a href="szolgaltatasok.html#redony">Redőny</a></li>
+          <li><a href="szolgaltatasok.html#festes">Festés</a></li>
+          <li><a href="szolgaltatasok.html#burkolas">Burkolás</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Oldalak</h4>
+        <ul>
+          <li><a href="rolunk.html">Rólunk</a></li>
           <li><a href="munkaink.html">Munkáink</a></li>
-          <li><a href="rolunk.html" aria-current="page">Rólunk</a></li>
           <li><a href="gyik.html">GYIK</a></li>
           <li><a href="kapcsolat.html">Kapcsolat</a></li>
         </ul>
-      </nav>
-      <div class="header-cta">
-        <a class="btn btn--primary" href="kapcsolat.html">Ajánlatkérés</a>
+      </div>
+      <div>
+        <h4>Kapcsolat</h4>
+        <ul>
+          <li><a href="tel:+36300000000">+36 30 000 0000</a></li>
+          <li><a href="mailto:info@szekoablak.hu">info@szekoablak.hu</a></li>
+          <li>6500 Baja, Minta utca 12.</li>
+        </ul>
       </div>
     </div>
-  </header>
-
-  <main>
-
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Rólunk</p>
-        <h1>Családi vállalkozás, ahol a nevünk a garancia.</h1>
-        <p class="lead">15 éve dolgozunk Baján és környékén. Nálunk az a mester adja át a munkát, aki az ajánlatot is adta.</p>
-      </div>
-    </section>
-
-    <!-- Story + image -->
-    <section class="section">
-      <div class="container about-split">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <div class="reveal">
-          <p class="eyebrow">Történetünk</p>
-          <h2 class="text-emphasis">A megbízhatóság nálunk nem szlogen.</h2>
-          <p>A Szeko Ablak Kft. családi vállalkozásként indult Baján. Az első munkáktól kezdve egy elv vezet minket: úgy dolgozunk mások otthonában, ahogy a sajátunkban tennénk.</p>
-          <p>Az évek alatt az ablakcsere mellé felépítettük a teljes felújítási szolgáltatásunkat, hogy ügyfeleinknek ne kelljen több mestert koordinálniuk.</p>
-        </div>
-        <div class="frame reveal-clip" data-clip-from="right">
-          <img src="https://images.unsplash.com/photo-1504307651254-35680f356dfd?q=80&w=1400&auto=format&fit=crop" alt="Csapatunk munka közben" loading="lazy" width="1400" height="1050" data-parallax>
-        </div>
-      </div>
-    </section>
-
-    <!-- Stats -->
-    <section class="section--tight">
-      <div class="container">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <div class="stat-row" data-stagger-group>
-          <div class="stat reveal-stagger"><strong>15</strong><span>év tapasztalat</span></div>
-          <div class="stat reveal-stagger"><strong>600+</strong><span>elvégzett munka</span></div>
-          <div class="stat reveal-stagger"><strong>40 km</strong><span>szolgáltatási körzet</span></div>
-          <div class="stat reveal-stagger"><strong>100%</strong><span>családi tulajdon</span></div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Timeline -->
-    <section class="section">
-      <div class="container">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <div class="section-head reveal">
-          <p class="eyebrow">Mérföldkövek</p>
-          <h2 class="text-emphasis">15 év, röviden</h2>
-        </div>
-        <ol class="timeline" data-stagger-group>
-          <li class="reveal-stagger">
-            <time>2011</time>
-            <h3>Az indulás</h3>
-            <p>Ablakcserével és javítással kezdünk Baján, egy kisteherautóval és két mesterrel.</p>
-          </li>
-          <li class="reveal-stagger">
-            <time>2015</time>
-            <h3>Redőny és árnyékolás</h3>
-            <p>A növekvő igényekre válaszul bővítjük a kínálatot redőnyszereléssel.</p>
-          </li>
-          <li class="reveal-stagger">
-            <time>2019</time>
-            <h3>Teljes körű felújítás</h3>
-            <p>Festéssel, tapétázással és burkolással már generál munkákat is vállalunk.</p>
-          </li>
-          <li class="reveal-stagger">
-            <time>2026</time>
-            <h3>Ma</h3>
-            <p>Összeszokott csapattal dolgozunk Baja 40 km-es körzetében — továbbra is családi kézben.</p>
-          </li>
-        </ol>
-      </div>
-    </section>
-
-    <!-- Team -->
-    <section class="section section--surface">
-      <div class="container">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <div class="section-head reveal">
-          <p class="eyebrow">Csapat</p>
-          <h2 class="text-emphasis">Akikkel találkozni fog</h2>
-        </div>
-        <div class="team-grid" data-stagger-group>
-          <article class="team-card frame reveal-stagger">
-            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=900&auto=format&fit=crop" alt="Szekeres Kornél portré" loading="lazy" width="900" height="1125">
-            <h3>Szekeres Kornél</h3>
-            <span>Ügyvezető, felmérés és árajánlat</span>
-          </article>
-          <article class="team-card frame reveal-stagger">
-            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=900&auto=format&fit=crop" alt="Szekeres Márk portré" loading="lazy" width="900" height="1125">
-            <h3>Szekeres Márk</h3>
-            <span>Kivitelezésvezető, nyílászárók</span>
-          </article>
-          <article class="team-card frame reveal-stagger">
-            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=900&auto=format&fit=crop" alt="Szekeres Anna portré" loading="lazy" width="900" height="1125">
-            <h3>Szekeres Anna</h3>
-            <span>Ügyfélkapcsolat, időpontok</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta-band">
-      <div class="container">
-        <span class="section-divider" aria-hidden="true"><span></span><span></span></span>
-        <p class="eyebrow" style="color:#7fa6d1;">Ajánlatkérés</p>
-        <h2 class="text-emphasis">Dolgozzunk együtt az otthonán</h2>
-        <p>Írjon nekünk, és 24 órán belül visszahívjuk egy időpont-egyeztetéssel.</p>
-        <div class="cta-actions">
-          <a class="btn btn--light btn--lg" href="kapcsolat.html">Ajánlatot kérek</a>
-          <a class="btn btn--ghost btn--lg" href="tel:+36300000000">+36 30 000 0000</a>
-        </div>
-      </div>
-    </section>
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <a class="brand" href="index.html">
-            <span class="brand-mark" aria-hidden="true"></span>
-            Szeko Ablak <small>Kft.</small>
-          </a>
-          <p>Családi vállalkozás Baján. Nyílászárócsere, redőny és teljes körű felújítás — 15 éve.</p>
-        </div>
-        <div>
-          <h4>Szolgáltatások</h4>
-          <ul>
-            <li><a href="szolgaltatasok.html#ablakcsere">Ablakcsere</a></li>
-            <li><a href="szolgaltatasok.html#redony">Redőny</a></li>
-            <li><a href="szolgaltatasok.html#festes">Festés</a></li>
-            <li><a href="szolgaltatasok.html#burkolas">Burkolás</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Oldalak</h4>
-          <ul>
-            <li><a href="rolunk.html">Rólunk</a></li>
-            <li><a href="munkaink.html">Munkáink</a></li>
-            <li><a href="gyik.html">GYIK</a></li>
-            <li><a href="kapcsolat.html">Kapcsolat</a></li>
-          </ul>
-        </div>
-        <div>
-          <h4>Kapcsolat</h4>
-          <ul>
-            <li><a href="tel:+36300000000">+36 30 000 0000</a></li>
-            <li><a href="mailto:info@szekoablak.hu">info@szekoablak.hu</a></li>
-            <li>6500 Baja, Minta utca 12.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <span>© 2026 Szeko Ablak Kft. Minden jog fenntartva.</span>
-        <span>Baja és környéke</span>
-      </div>
+    <div class="footer-bottom">
+      <span>© 2026 Szeko Ablak Kft. Minden jog fenntartva.</span>
+      <span>Baja és környéke</span>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
-  <script src="assets/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/main.js" defer></script>
+<script src="assets/motion.js" defer></script>
 </body>
 </html>
